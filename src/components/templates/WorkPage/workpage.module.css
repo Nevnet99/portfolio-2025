@@ -83,5 +83,12 @@
   .article {
     grid-column: 5 / 9;
   }
+
+  .back {
+    top: 2.5rem;
+    left: 2.5rem;
+    bottom: unset;
+    transform: unset;
+  }
 }
 
