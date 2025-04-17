@@ -1,0 +1,28 @@
+.accordion {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+
+.accordionSummary {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 3px solid var(--royal-red);
+  cursor: pointer;
+}
+
+.accordion[open] .accordionSummary {
+  background-color: var(--royal-red);
+  color: var(--l-white);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.accordionContent {
+  padding: 1.5rem;
+  background-color: var(--royal-red);
+  color: var(--l-white);
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}

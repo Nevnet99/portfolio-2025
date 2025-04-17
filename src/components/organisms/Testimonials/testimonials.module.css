@@ -1,0 +1,20 @@
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  grid-column: 2 / 12;
+  margin: 5rem 0;
+}
+
+.title {
+  color: var(--secondary-text);
+}
+
+@media (min-width: 768px) {
+  .list {
+    grid-column: 5 / 9;
+  }
+}

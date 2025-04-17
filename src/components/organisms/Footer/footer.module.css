@@ -1,0 +1,28 @@
+.footer {
+	display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-column: 1 / 13;
+  width: 100%;
+  background: var(--l-white);
+  color: var(--l-black);
+  padding: 2rem 0;
+  border-top: var(--stroke-width) solid var(--l-blue);
+}
+
+.footer h2 {
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: left;
+  gap: 2rem;
+  grid-column: 4 / 10;
+  padding: 0;
+}

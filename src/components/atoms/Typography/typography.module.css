@@ -1,0 +1,24 @@
+.p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.h1 {
+  line-height: 80%;
+  letter-spacing: -0.04em;
+  font-size: clamp(4rem, 10vw, 9.75rem);
+
+}
+
+.h2 {
+  line-height: 80%;
+  letter-spacing: -0.04em;
+  font-size: clamp(2.5rem, 10vw, 7.5625rem);
+}
+
+.h3 {
+  line-height: 80%;
+  letter-spacing: -0.04em;
+  font-size: clamp(1.5rem, 10vw, 3rem);
+}
+

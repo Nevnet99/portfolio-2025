@@ -1,0 +1,107 @@
+:root {
+  --l-white: #fdf9f0;
+  --l-black: #141414;
+  --l-orange: #FF6D38;
+  --l-blue: #478BFF;
+  --l-purple: #7A78FF;
+
+  --background: var(--l-black);
+  --text: var(--l-white);
+  --stroke-color: var(--l-white);
+  --stroke-color-inverted: var(--l-black);
+  --stroke-width: 3px;
+  --radius: 1.875rem;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  margin: 0; 
+  padding: 0;
+  scrollbar-color: var(--l-white) var(--background);
+  scrollbar-width: thin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+main {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#root {
+  display: contents;
+}
+
+.caudex {
+  font-family: "Caudex", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.black {
+  font-weight: 900;
+}
+
+h1 {
+  line-height: 85%;
+}
+
+h1, h2, h3, h4, h5, h6, p, li {
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+::-webkit-scrollbar{background:transparent;width:8px}
+::-webkit-scrollbar-thumb{background:var(--l-blue);border-radius:8px}
+::-webkit-scrollbar-track{border-radius:8px}
+
+/* Popover underlay this is a hack for react-aria */
+[data-testid="underlay"] {
+  transition: background 0.3s ease;
+  background: rgba(0, 0, 0, 0.7);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

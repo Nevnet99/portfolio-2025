@@ -1,0 +1,35 @@
+.container {
+  display: inline-block;
+}
+
+.word {
+  position: relative;
+  display: inline-block;
+  margin-right: 0.4rem;
+}
+
+.text {
+  display: inline-block;
+}
+
+@keyframes skeleton {
+  0% {
+    background-color: var(--l-orange);
+  }
+  
+  100% {
+    background-color: var(--l-blue);
+  }
+}
+.skeleton {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: calc(100% - 0.5rem);
+  background-color: var(--l-orange);
+  border-radius: var(--radius);
+  animation: skeleton 1s infinite;
+}

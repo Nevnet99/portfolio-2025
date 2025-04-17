@@ -1,0 +1,87 @@
+.back {
+  all: unset;
+  position: fixed;
+  border-radius: 9999px;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 3px solid var(--l-white);
+  background: var(--l-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.back p {
+  margin: 0;
+  text-wrap: nowrap;
+}
+
+.back:focus-visible {
+  outline: revert;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2 / 12;
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.header h1 {
+  margin-bottom: 3rem;
+}
+
+.title {
+  text-transform: capitalize;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.article {
+  grid-column: 2 / 12;
+}
+
+.article h2 {
+  margin-bottom: 2rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1;
+}
+
+.article h2:not(:first-child) {
+  margin-top: 3rem;
+}
+
+.article h3 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.article h3:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.article p {
+  margin-bottom: 1rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+.article ul {
+  margin-bottom: 1rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  padding-left: 3rem;
+}
+
+@media (min-width: 768px) {
+  .article {
+    grid-column: 5 / 9;
+  }
+}
+

@@ -1,0 +1,79 @@
+.navigation {
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.list {
+  max-width: 1440px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  gap: 2rem;
+  padding: 0 2rem;
+  background: var(--l-white);
+  color: var(--l-black);
+  width: fit-content;
+  border-radius: var(--radius);
+  padding: 1rem 1.5rem;
+  border: var(--stroke-width) solid var(--stroke-color-inverted);
+}
+
+.mobileList {
+  all: unset;
+  list-style: none;
+  border-radius: var(--radius);
+  background: var(--l-black);
+  border: var(--stroke-width) solid var(--stroke-color);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  z-index: 100;
+}
+
+.mobileListItem {
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+
+.mobileListItem a:hover {
+  color: var(--l-white);
+}
+
+.menuButton {
+  all: unset;
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  background: var(--l-black);
+  color: var(--l-white);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  border: var(--stroke-width) solid var(--stroke-color);
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+}
+
+.listItem {
+  position: relative;
+  padding: 0.5rem 1rem;
+}
+
+
+.activeIndicator {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius);
+  background: var(--l-purple);
+  z-index: 101;
+}
+

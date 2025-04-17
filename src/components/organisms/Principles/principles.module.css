@@ -1,0 +1,45 @@
+.principles {
+ margin: 5rem 0;
+ margin-bottom: 0;
+}
+
+.principlesIntro {
+  grid-column: 2 / 12;
+  margin-top: 2.5rem;
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.principlesList {
+  grid-column: 2 / 12;
+	list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50svh;
+}
+
+.principlesList h3 {
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.principlesList p {
+  max-width: 60ch;
+}
+
+.principle:first-child {
+  margin-top: 50svh;
+
+}
+
+.principleTitle {
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.principleDescription {
+  text-align: left;
+}

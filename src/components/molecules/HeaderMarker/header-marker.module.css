@@ -1,0 +1,25 @@
+.headerMarker {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / 13;
+  text-align: center;
+}
+
+.headerTitle {
+  color: var(--text);
+  text-transform: uppercase;
+  background: var(--l-blue);
+
+  padding: 1rem 1.5rem;
+
+}
+
+
+@media (min-width: 768px) {
+  .headerTitle {
+    border-radius: var(--radius);
+    border: var(--stroke-width) solid var(--stroke-color);
+  }
+}
+

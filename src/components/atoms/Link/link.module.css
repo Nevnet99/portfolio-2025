@@ -1,0 +1,28 @@
+.link {
+  all: unset;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: var(--l-orange);
+}
+
+.link:focus-visible {
+  outline: revert;
+}
+
+.nav {
+  font-weight: 900;
+  text-decoration: none;
+  z-index: 102;
+}
+
+.nav:hover {
+  color: var(--l-black);
+}
+
+

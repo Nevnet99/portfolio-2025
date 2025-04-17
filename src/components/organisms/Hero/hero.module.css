@@ -1,0 +1,47 @@
+.hero {
+  position: relative;
+  grid-column: 1 / 13;
+  width: 100%;
+  min-height: calc(100svh - 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--l-orange);
+  color: var(--l-black);
+  border-bottom: var(--stroke-width) solid var(--stroke-color);
+  text-align: center;
+}
+
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  position: relative;
+}
+
+/* This is the only place in the site we use this sizing hence why its not in the typography component */
+.subTitle {
+  position: relative;
+  margin-top: 2rem;
+  font-size: clamp(1rem, 10vw, 3.375rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 80%;
+  letter-spacing: -0.04em;
+}
+
+
+@media (min-width: 768px) {
+  .hero {
+    border: var(--stroke-width) solid var(--stroke-color);
+    border-radius: var(--radius);
+    margin: 2rem auto;
+    width: calc(100% - 4rem);
+  }
+}
+
+
