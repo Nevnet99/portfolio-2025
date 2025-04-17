@@ -5,6 +5,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import { HomePage } from "./components/templates/HomePage";
 import { WorkPage } from "./components/templates/WorkPage";
+
 const router = createBrowserRouter([
 	{
 		path: "/",

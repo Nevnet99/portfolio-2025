@@ -3,6 +3,7 @@ import { PageSection } from "../../atoms/PageSection";
 import { Typography } from "../../atoms/Typography";
 import styles from "./selected-work.module.css";
 import { motion } from "motion/react";
+import { Link } from "react-router";
 const work = [
 	{
 		title: "DEPT",
@@ -31,11 +32,11 @@ export const SelectedWork = ({
 						className={styles.item}
 						key={item.title}
 					>
-						<a className={styles.button} href={item.href}>
+						<Link className={styles.button} to={item.href}>
 							<Typography as="h3" visual="h2" black>
 								{item.title}
 							</Typography>
-						</a>
+						</Link>
 					</motion.li>
 				))}
 			</ul>
