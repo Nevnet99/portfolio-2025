@@ -12,7 +12,7 @@ export const Contact = ({
 			<HeaderMarker title="05 / Contact" />
 
 			<article className={styles.contact}>
-				<Typography as="p" visual="h2" black>
+				<Typography as="h3" visual="h2" black>
 					Got a question? Interesting Project? Let's talk.
 				</Typography>
 

@@ -293,7 +293,7 @@ export const Principles = ({
 		<PageSection id="principles" ref={ref}>
 			<HeaderMarker title="02 / Principles" />
 
-			<Typography className={styles.principlesIntro} as="p" visual="p">
+			<Typography className={styles.principlesIntro} as="span" visual="p">
 				<SplitText
 					id="principles-intro"
 					copy="These are the principles I live by as a Frontend Engineer. They shape

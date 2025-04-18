@@ -47,19 +47,21 @@ export const Footer = () => {
 				{links.map((link) => (
 					<li key={link.title}>
 						<Typography as="h2">{link.title}</Typography>
-						{link.links.map((nestedLink) => (
-							<li key={nestedLink.title}>
-								<Link
-									href={nestedLink.href}
-									download={
-										"download" in nestedLink ? nestedLink.download : undefined
-									}
-									target={nestedLink?.target}
-								>
-									{nestedLink.title}
-								</Link>
-							</li>
-						))}
+						<ul className={styles.links}>
+							{link.links.map((nestedLink) => (
+								<li key={nestedLink.title}>
+									<Link
+										href={nestedLink.href}
+										download={
+											"download" in nestedLink ? nestedLink.download : undefined
+										}
+										target={nestedLink?.target}
+									>
+										{nestedLink.title}
+									</Link>
+								</li>
+							))}
+						</ul>
 					</li>
 				))}
 			</ul>

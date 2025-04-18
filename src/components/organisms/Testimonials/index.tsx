@@ -97,7 +97,7 @@ export const Testimonials = ({
 				{testimonials.map((testimonial) => (
 					<li key={testimonial.name}>
 						<article>
-							<Typography as="p">{testimonial.quote}</Typography>
+							<div className={styles.quote}>{testimonial.quote}</div>
 							<Typography as="p">{testimonial.name}</Typography>
 							<Typography className={styles.title} as="p">
 								{testimonial.title}

@@ -23,7 +23,7 @@ export const SplitText = ({ id, copy }: { id: string; copy: string }) => {
 
 	return (
 		<>
-			<p className="sr-only">{copy}</p>
+			<span className="sr-only">{copy}</span>
 			<motion.div aria-hidden="true" className={styles.container} ref={ref}>
 				{split.map((word, index) => (
 					<div
