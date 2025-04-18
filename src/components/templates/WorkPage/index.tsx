@@ -3,6 +3,7 @@ import { Typography } from "../../atoms/Typography";
 
 import styles from "./workpage.module.css";
 import clsx from "clsx";
+import { useEffect } from "react";
 
 const DeptCopy = () => {
 	return (
@@ -329,6 +330,11 @@ const PrimerCopy = () => {
 
 export const WorkPage = () => {
 	const { work } = useParams();
+
+	// I hate this but it's a limitation on react router.
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<main>
